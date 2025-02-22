@@ -1,12 +1,18 @@
 #!/bin/bash
 
-cp .vimrc ~/
+# copies vimrc from already cloned repo
+cp ~/dotfiles/vim-config/.vimrc ~/
 
-if [ ! -d ~/vim/bundle/Vundle.vim]: then 
-	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# install vundle if not already installed 
+if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
+	    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
 
-fi 
-
+# installs vim plugins 
 vim +PluginInstall +qall
 
-vim "Vim setup complete"
+# notifies user
+echo "Vim setup complete!"
+
+
+
