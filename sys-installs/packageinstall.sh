@@ -8,7 +8,7 @@ test $? -eq 0 || { echo "You should have sudo privilege to run this script"; exi
 test -x /usr/bin/apt || { echo "This script requires the apt package manager."; exit 1; }
 
 # user prompt explaining what is going to be installed
-echo "This script installs Ansible"
+echo "This script installs Ansible, and requires python3"
 read -p "Would you like to install Ansible on your system? y to proceed, n to cancel.: " response
 test "$response" == "y" || { echo "Installation cancelled"; exit 1; }
 
@@ -22,10 +22,15 @@ else
 	echo "Ansible is not already installed, ready for installation."
 fi 
 
-# silently installing 
 
 # installing prereqs
+apt -y update 
 
-apt update -y
+#installing based on ubuntu ansible guide 
+apt install -y software-properties-common 
 
+apt add-apt-repository --yes --update ppa:ansible/ansible
 
+apt install -y ansible
+
+echo "installation has been completed, run command for details: ansible --version" 
