@@ -8,7 +8,7 @@ test $? -eq 0 || { echo "You should have sudo privilege to run this script"; exi
 test -x /usr/bin/apt || { echo "This script requires the apt package manager."; exit 1; }
 
 # user prompt explaining what is going to be installed
-echo "This script installs Ansible, and requires python3"
+echo "This script installs Ansible, and requires python3 for certain modes."
 read -p "Would you like to install Ansible on your system? y to proceed, n to cancel.: " response
 test "$response" == "y" || { echo "Installation cancelled"; exit 1; }
 
@@ -33,4 +33,4 @@ apt add-apt-repository --yes --update ppa:ansible/ansible
 
 apt install -y ansible
 
-echo "installation has been completed, run command for details: ansible --version" 
+echo "Installation has been completed, run command for details: ansible --version" 
