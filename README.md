@@ -1,5 +1,5 @@
-## Brandie Ewing's Dotfile repository 
-#### customizing my linux system for efficiency
+## Brandie Ewing's Dotfiles
+#### customizing linux system for efficiency
 
 This is my personal dotfiles collection of custom homefiles, system installs, and vim configuring. It contains a homefile script for **Custom bash aliases** in bash environments, **Vim Customization** for development control and **Ansible** system install for managing and configuring nodes and modules. 
 
