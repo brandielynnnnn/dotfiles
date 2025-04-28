@@ -5,7 +5,7 @@ This is my personal dotfiles collection of custom homefiles, system installs, an
 
 For use, Clone the repository 
 ```bash
-https://github.com/brandielynnnnn/dotfiles.git
+git clone https://github.com/brandielynnnnn/dotfiles.git
 ```
 Install Pre-reqs 
 ```bash 
