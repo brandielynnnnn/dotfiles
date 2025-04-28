@@ -12,9 +12,6 @@ Install Pre-reqs
 sudo apt-get install vim git python3
 ```
 
-Copy files Run scipts in homefiles, sys-installs, and vim-config 
-```bash
-
-```
+Copy folders to home directory and  Run scipts in homefiles, sys-installs, and vim-config for customized bashed environment. For improvements make more scripts on installing packages based on needs in environment. 
 
 
