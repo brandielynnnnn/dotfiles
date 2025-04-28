@@ -1,3 +1,5 @@
+## Homefiles 
+
 The folder included bash environment aliases implementation for a faster and reliable bash.
 
 The .bashrc file is a config file that needs to be moved to home directory under ``/home/user/.bashrc``. This bash rc file implements new aliases like bye for exiting bash and sai for ``sudo apt install`` used for packages. 
